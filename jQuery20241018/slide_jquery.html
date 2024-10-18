@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src ="../javascript/jquery-3.6.0.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#btn1").click(function(){
+                $("p").slideUp();
+            });
+
+            $("#btn2").click(function(){
+                $("p").slideDown();
+            });
+        });
+    </script>
+
+    <meta charset="UTF-8">
+    <title>인내가 세상을 정복한다.</title>
+</head>
+<body>
+    <button id = "btn1">slideUp()</button>
+    <button id = "btn2">slideDown()</button>
+
+
+    <P style="background-color: rgb(181, 233, 236);">
+        인내가 세상을 정복한다.<br>
+        인내가 세상을 정복한다.<br>
+        인내가 세상을 정복한다.<br>
+
+    </P>
+</body>
+</html>

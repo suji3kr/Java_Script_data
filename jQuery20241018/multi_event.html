@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src ="../javascript/jquery-3.6.0.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("p").on({
+                mouseenter:function(){
+                    $(this).css("background-color","yellow");
+                },
+                mouseleave:function(){
+                    $(this).css("background-color","pink")
+                },
+                click:function(){
+                    $(this).css("background-color","skyblue");
+                },
+                dblclick:function(){
+                    $(this).css("background-color","red");
+                }
+            });
+        });
+    </script>
+    <meta charset="UTF-8">
+    <title>form_Event</title>
+</head>
+<body>
+    <P style="border: solid 1px  black;">
+        발 없는 말이 천리간다.
+    </P>
+</body>
+</html>

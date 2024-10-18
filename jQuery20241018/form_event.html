@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src ="../javascript/jquery-3.6.0.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("input").focus(function(){
+                $(this).css("background-color","gray");
+            });
+            $("input").blur(function(){
+                $(this).css("background-color","pink");
+            });
+
+            $("select").change(function(){
+                console.log("선택 박스의 값이 바뀌었어요 !");
+            });
+        });
+    </script>
+    <meta charset="UTF-8">
+    <title>form_Event</title>
+</head>
+<body>
+    <P>-아이디 :<input type ="text"></P>
+    <select>
+        <option>2020</option>
+        <option>2021</option>
+        <option>2022</option>
+        <option>2023</option>
+    </select>
+
+    <p id ="show"></p>
+</body>
+</html>

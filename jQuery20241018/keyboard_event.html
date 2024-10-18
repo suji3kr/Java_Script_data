@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src ="../javascript/jquery-3.6.0.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("p:eq(0)input").keydown(function(){
+                $(this).css("background-color", "yellow");
+            });
+            $("p:eq(0)input").keyup(function(){
+                $(this).css("background-color", "pink");
+            });
+            $("p:eq(1)input").keypress(function(){
+                $(this).css("background-color", "skyblue");
+            });
+            
+        });
+    </script>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <P>-아이디 :<input type ="text"></P>
+    <p>-비밀번호: <input type="password"></p>
+</body>
+</html>

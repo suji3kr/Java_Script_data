@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src ="../javascript/jquery-3.6.0.js"></script>
+    <script>
+        $(document).ready(function(){
+        $(":text, :password").css("border", "solid 1px pink");
+        $(":button").css({"background-color": "yellow","border": "solid 1px black"});
+        $(":submit, :reset").css({"background-color": "pink","border": "solid 1px black"});
+        $(":radio, :checkbox").wrap("<span style='background-color:yellow'></span>");
+        $("input:checked").wrap("<span style='background-color:red'></span>");
+        $("option:selected").css("background-color", "red"); // 수정된 부분
+    });
+          
+
+    </script>
+    <style>
+        ul{
+            list-style-type: none; /* 리스트 점 제거 */
+            border:solid 1px blue;}
+
+        li {
+            margin-bottom:10px ;    /* 아래쪽 마진 추가*/
+        }
+    </style>
+    <meta charset="UTF-8">
+
+    <title>회원가입 양식</title>
+</head>
+<body>
+    <h2>회원 가입 양식 </h2>
+    <form>
+        <ul>
+            <li>
+                아이디 : <input type = "text">
+                <input type = "button"  value ="아이디 중복체크">
+            </li>
+            <li>
+                이름 : <input type ="text">
+
+            </li>
+            <li>
+                비밀번호 : <input type ="password">
+            </li>
+            
+            <li>
+                성별 : <input type="radio" name="gender">
+                남성 <input type="radio" name ="gender" checked>여성
+            </li>
+            <li>
+                이메일 : <input type ="text">@
+                <select>
+                    <option value="naver">naver.com</option>
+                    <option value="hanmail" selected>hanmail.net</option>
+                    <option value="gmail">gmail.com</option>
+                </select>
+            </li>
+            <li>
+                성별: <input type ="checkbox"  name ="h1" checked>인터넷
+                <input type = "checkbox"name = "h2">친구
+                <input type="checkbox" name ="h3" checked>기타
+            </li>
+        </ul>
+        <div>
+            <input type="submit" value="제출하기">
+            <input type="reset" value="입력취소">
+        </div>
+    </form>
+</body>
+</html>

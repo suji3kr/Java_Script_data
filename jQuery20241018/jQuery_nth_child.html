@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src ="../javascript/jquery-3.6.0.js">
+
+    </script>
+    <script>
+        $(document).ready(function(){
+            $("li:nth-child(2)").css("background-color","yellow");
+            $("li:eq(2)").css("border","solid 2px red");
+        });
+    </script>
+    <style>
+        ul{border:solid 1px blue;}
+    </style>
+    <meta charset="UTF-8">
+
+    <title>Document</title>
+</head>
+<body>
+    <h2>:nth-child(n)필터</h2>
+    <ul>
+        <li>항목1</li>
+        <li>항목2</li>
+        <li>항목3</li>
+        <li>항목4</li>
+    </ul>
+    
+    <ul>
+        <li>항목1</li>
+        <li>항목2</li>
+        <li>항목3</li>
+        <li>항목4</li>
+        
+    </ul>
+
+    
+</body>
+</html>
