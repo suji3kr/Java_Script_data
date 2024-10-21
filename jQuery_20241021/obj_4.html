@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>자동차의 속도 제어하기</title>
+</head>
+<body>
+    <p id = "upspeed"></p>
+    <p id = "downspeed"></p>
+    <script>
+        let car ={
+            name:'Sonata',
+            speed: 100,
+            color:'white',
+            speedup: function(a){
+                let sp = this.speed+a;
+                if(sp>=300){
+                    sp=50;
+                    return sp;
+                }
+                else{
+                    return sp;
+                }
+            },
+            speeddown: function(a){
+                let sp= this.speed-a;
+                if(sp<0){
+                    sp=0;
+                    return sp;
+                }
+                else{
+                    return sp;
+                }
+            }
+        };
+        let upspeed= document.getElementById("upspeed");
+        upspeed.textContent='속도 증가:' + car.speedup(100);
+        let downspeed= document.getElementById("downspeed");
+        downspeed.textContent='속도 감소:' + car.speeddown(30);
+    </script>
+</body>
+</html>

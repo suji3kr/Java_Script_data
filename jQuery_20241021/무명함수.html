@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        let printAnonymousMsg = function(msg){
+            document.write("무명함수: "+msg +"<br>");
+        }    
+        function printDefaultMsg(msg){
+            document.write("기본 함수 :" +msg +"<br>");
+        }
+        function callFunction(){
+            printAnonymousMsg("호출되었습니다.");
+            printDefaultMsg("호출되었습니다.");
+        }
+        
+    </script>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <h2>무명함수 실습</h2>
+    <button onclick="callFunction()">함수 호출</button>
+</body>
+</html>

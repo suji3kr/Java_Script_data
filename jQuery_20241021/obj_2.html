@@ -1,0 +1,30 @@
+<!-- <!DOCTYPE html>  p408 -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>자동객체 생성</title>
+</head>
+<body>
+    <p id = "carname"></p>
+    <p id = "carcolor"></p>
+    <p id = "carspeed"></p>
+    <script>
+        let car= {
+            name:'Sonata',
+            speed: 50,
+            color:'white',
+            start: function(){
+                return this.speed+10;
+            }
+        };
+        let cname=document.getElementById("carname");
+        cname.textContent=car.name;
+        let colname=document.getElementById("carcolor");
+        colname.textContent=car.color;
+        let cspeed=document.getElementById("carspeed");
+        cspeed.textContent=car.start();
+        
+    </script>
+</body>
+</html>
